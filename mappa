@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class Operators { 
+    public static void main(String[] args) { 
+        System.out.println("Hello World"); 
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Kérek egy szót: ");
+        String szo = scanner.nextLine();
+
+
+
+
+
+        System.out.print("Kérek egy karaktert: ");
+        char karakter_1 = scanner.next().charAt(0);
+
+        System.out.print("Kérek egy másik karaktert: ");
+        char karakter_2 = scanner.next().charAt(0);
+
+
+
+
+
+        System.out.print("Kérek egy számot: ");
+        int szam_1 = scanner.nextInt();
+
+        System.out.print("Kérek egy másik számot: ");
+        int szam_2 = scanner.nextInt();
+
+
+
+        System.out.print("Kérek egy double számot: ");
+        double dub_1 = scanner.nextDouble();
+
+
+        System.out.print("Kérek egy másik double számot: ");
+        double dub_2 = scanner.nextDouble();
+
+
+        
+
+        System.out.println("Összefűzés: " +(szo + karakter_1 + karakter_2));
+        System.out.println("Osztás: " + (szam_1 / szam_2));
+        System.out.println("Összeadás:  " + (dub_1 + dub_2));
+        System.out.println("Kivonás: " + (dub_1 - szam_1));
+        System.out.println("Szorzás integerekkel: " + (szam_1 * szam_2));
+        System.out.println("Szorzás double-lel: " + (dub_1 * dub_2));
+
+
+        System.out.println("\n");
+        
+        
+
+        if(szam_1 > szam_2)
+        {
+            System.out.println("Az első szám nagyobb!");
+        }
+        if(szam_1 == szam_2)
+        {
+            System.out.println("A két szám egyenlő!");
+        }
+        else
+        {
+            System.out.println("A második szám nagyobb!");
+        }
