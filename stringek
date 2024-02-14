@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class stringek {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Kérem adja meg a vezeték nevét: ");
+        String vez_nev = scanner.nextLine();
+
+
+
+        System.out.print("Kérem adja meg a keresztnevét: ");
+        String ker_nev = scanner.nextLine();
+
+
+        System.out.print("Kérem adja meg a születési helyét: ");
+        String hely = scanner.nextLine();
+
+
+        System.out.print("Kérem adja meg az életkorát: ");
+        int kor = scanner.nextInt();
+
+        String fullName = vez_nev +" " + ker_nev;
+
+        System.out.println(fullName.toUpperCase());
+
+        System.out.println(fullName.indexOf(ker_nev));
+
+        System.out.println((fullName + " "  +hely).toLowerCase());
+
+        System.out.println(kor + " " + fullName + " " + hely);
+
+        System.out.println("A keresztnév A betűvel kezdődik: " +ker_nev.startsWith("A"));
+
+        System.out.println("A vezetéknév t betűre végződik: " + vez_nev.endsWith("t"));
+
+        System.out.println(fullName.length());
+
+        System.out.println(fullName.replaceAll("i", "y"));
+
+
+
+
+
+
+        
+    }
+    
+}
